@@ -1,2 +1,5 @@
 # js
+
+### make sure everyday learn something! with foot steps by date note taking in readme.
+
 learning start js today 17.03.2026

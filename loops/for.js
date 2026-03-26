@@ -71,7 +71,7 @@ for (let i = 1; i <= 15; i += 2) {
 }
 
 
-// ---------
+//! ---------even odd for loop
 
 for (let i = 0; i < 30; i++) {
   if (i % 5 == 0) {
@@ -97,3 +97,116 @@ for (let i = 0; i < 30; i++) {
   }
 }
 
+//! ---------- break for loop
+for (let i = 0; i < 10; i++) {
+  // console.log(i);
+
+  if (i >= 3) {
+    break
+  }
+}
+
+for (let i = 0; i < 5; i++) {
+  // console.log(i);
+
+  if (i > 2) {
+    break
+  }
+}
+
+for (let i = 0; i < 50; i++) {
+  // console.log(i);
+
+  if (i > 20) {
+    // console.log('stop the bus');
+    break
+  }
+}
+
+//! ----------- continue for loop
+for (let i = 0; i < 5; i++) {
+
+  if (i == 2) {
+    // console.log(i, 'skip the bus station');
+    continue
+  }
+
+  // console.log(i);
+}
+
+//* skip absence student
+for (let i = 0; i < 10; i++) {
+
+  if (i == 2 || i == 6) {
+    // console.log(i, 'absence');
+    continue
+  }
+
+  // console.log(i, 'calling the roll');
+}
+
+//* skip even number
+for (let i = 0; i < 10; i++) {
+
+  if (i % 2 == 0) {
+    continue
+  }
+
+  // console.log(i);
+}
+
+//* skip odd number
+for (let i = 0; i < 10; i++) {
+
+  if (i % 2 == 1) {
+    continue
+  }
+
+  // console.log(i);
+}
+
+
+//! ------practice
+for (let i = 0; i < 30; i++) {
+  // console.log(i);
+
+  if (i >= 15) {
+    break
+  }
+}
+
+for (let i = 0; i < 40; i++) {
+  if (i % 7 == 1) {
+    // console.log(i);
+  }
+}
+
+for (let i = 0; i < 15; i++) {
+  if (i == 9) {
+    continue
+  }
+
+  // console.log(i);
+}
+
+for (let i = 0; i < 20; i++) {
+  if (i == 12) {
+    continue
+  }
+
+  // console.log(i);
+}
+
+for (let i = 0; i < 25; i++) {
+  if (i % 3 == 1) {
+    // console.log(i);
+  }
+}
+
+for (let i = 91; i < 120; i++) {
+  // console.log(i);
+
+  if (i % 10 == 0) {
+    break
+  }
+}

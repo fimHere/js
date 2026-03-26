@@ -107,3 +107,7 @@ const books1 = {
     b2: 'th',
     b3: 'Got'
 }
+let vlu = Object.values(books1)
+for (const key of vlu) {
+    // console.log(vlu);
+}

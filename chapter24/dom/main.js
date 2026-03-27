@@ -53,8 +53,32 @@ let frTitle = document.querySelector("#fruitsTitle li"); //first element show
 
 // --------
 let fruTitle = document.getElementById('fruitsTitle')
-console.log(fruTitle); 
-console.log(fruTitle.childNodes); //all child nodes
-console.log(fruTitle.firstChild); //first child nodes
+// console.log(fruTitle); 
+// console.log(fruTitle.childNodes); //all child nodes
+// console.log(fruTitle.firstChild); //first child nodes
 
 
+// --------createElement & append or adding to html
+
+let createHead = document.createElement('h2')
+createHead.textContent = 'This is paraDiv'
+const addingHead = document.querySelector('.paraDiv')
+addingHead.appendChild(createHead)
+
+
+let createPara = document.createElement('p')
+createPara.innerHTML = 'hello, im para inside of paraDiv'
+const addingPara = document.querySelector('.paraDiv')
+addingPara.appendChild(createPara)
+
+
+let createLi = document.createElement('li')
+createLi.textContent = 'mango'
+const addingLi = document.querySelector('.paraDiv')
+addingLi.appendChild(createLi)
+
+// -------onclick
+function changeBg() {
+  document.body.style.backgroundColor = 'gray'
+  document.body.style.textAlign = 'center'
+}

@@ -12,10 +12,20 @@ const rich = money + 50;
 //*can changed when used array ---------
 const num = [1, 2, 3,]
 // console.log(num);
-num[3]=4
+num[3] = 4
 // console.log(num);
-num[1]=4
+num[1] = 4
 // console.log(num);
+
+//*can changed when used object ---------
+const person = {
+    name: 'miraj',
+    age: 25
+}
+console.log(person);
+person.class = 'seven'
+console.log(person);
+
 
 
 //! can change declared variable values

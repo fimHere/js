@@ -79,7 +79,7 @@ let bookValues = books(['html', 'css', 'js'])
 function productDetails(total = { price: 10, quantity: 1 }) {
     // console.log(total);
     let totalPrice = total.price * total.quantity
-
+    
     return totalPrice
 }
 let value = productDetails()

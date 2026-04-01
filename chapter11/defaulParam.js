@@ -67,3 +67,23 @@ let userItem1 = userProfile('miraj', '10k')
 // console.log(userItem1);
 
 // -------
+function books(list = ['js book']) {
+    return list
+}
+let bookValue = books()
+// console.log(`default value ${bookValue}`);
+let bookValues = books(['html', 'css', 'js'])
+// console.log(bookValues);
+
+// -------
+function productDetails(total = { price: 10, quantity: 1 }) {
+    // console.log(total);
+    let totalPrice = total.price * total.quantity
+
+    return totalPrice
+}
+let value = productDetails()
+// console.log(value);
+
+let values = productDetails({ price: 100, quantity: 3 })
+// console.log(values);

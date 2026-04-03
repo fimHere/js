@@ -59,7 +59,7 @@ const mySelf1 = {
     }
 }
 mySelf1.sayRegularFun() //Hello regular, this is miraj, age is 25
-let mySelfResult = mySelf1.sayRegularFun1() 
+let mySelfResult = mySelf1.sayRegularFun1()
 mySelfResult() //Hello arrow, this is miraj, age is 25
 
 
@@ -70,5 +70,27 @@ const greet = (name = 'guest') => {
 // console.log(greet());
 // console.log(greet('miraj'));
 
-//~ object return in arrow func
+//~ object return in arrow func with regular func
 //! very important
+function createPerson(name, age, boolean) {
+    return {
+        fullName: name,
+        userAge: age,
+        isDev: boolean
+    };
+}
+
+const user1 = createPerson('siraj', 25, true);
+console.log(user1);
+
+
+
+const createPersons = (name, age, boolean) => {
+    return {
+        fullName: name,
+        urAge: age,
+        isDevs: boolean
+    }
+}
+let usr1 = createPersons('miraj', 34, false)
+console.log(usr1);

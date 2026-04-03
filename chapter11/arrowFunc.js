@@ -81,7 +81,7 @@ function createPerson(name, age, boolean) {
 }
 
 const user1 = createPerson('siraj', 25, true);
-console.log(user1);
+// console.log(user1);
 
 
 
@@ -93,4 +93,4 @@ const createPersons = (name, age, boolean) => {
     }
 }
 let usr1 = createPersons('miraj', 34, false)
-console.log(usr1);
+// console.log(usr1);

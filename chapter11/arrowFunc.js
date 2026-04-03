@@ -34,11 +34,41 @@ const mySelf = {
     name: 'miraj',
     age: 25,
     sayRegularFun: function () {
-        console.log(`Hello regular, this is ${this.name}, age is ${this.age}`);
+        // console.log(`Hello regular, this is ${this.name}, age is ${this.age}`);
     },
     sayArrowFunc: () => {
-        console.log(`Hello arrow, this is ${this.name}, age is ${this.age}`);
+        // console.log(`Hello arrow, this is ${this.name}, age is ${this.age}`);
     }
 }
-mySelf.sayRegularFun()
-mySelf.sayArrowFunc()
+mySelf.sayRegularFun() //Hello regular, this is miraj, age is 25
+mySelf.sayArrowFunc() //Hello regular, this is undefined, age is undefined
+
+const mySelf1 = {
+    name: 'miraj',
+    age: 25,
+    sayRegularFun: function () {
+        // console.log(`Hello regular, this is ${this.name}, age is ${this.age}`);
+    },
+
+    sayRegularFun1() {
+        const sayArrowFunc = () => {
+            // console.log(`Hello arrow, this is ${this.name}, age is ${this.age}`);
+        }
+
+        return sayArrowFunc
+    }
+}
+mySelf1.sayRegularFun() //Hello regular, this is miraj, age is 25
+let mySelfResult = mySelf1.sayRegularFun1() 
+mySelfResult() //Hello arrow, this is miraj, age is 25
+
+
+//! default params in arrow func
+const greet = (name = 'guest') => {
+    return `Hello, ${name}`
+}
+// console.log(greet());
+// console.log(greet('miraj'));
+
+//~ object return in arrow func
+//! very important

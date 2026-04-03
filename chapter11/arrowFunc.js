@@ -94,3 +94,48 @@ const createPersons = (name, age, boolean) => {
 }
 let usr1 = createPersons('miraj', 34, false)
 // console.log(usr1);
+
+
+//! practice
+//* 1
+let names = ['miraj', 'shahajadi', 'labib', 'adiba']
+const nameReturn = (indx) => {
+    return indx
+}
+let value = nameReturn(names[1])
+// console.log(value);
+
+//*2
+const gunFolReturn = (a, b, c) => {
+    let gun = a * b * c
+
+    return gun
+}
+let gunResult = gunFolReturn(1, 2, 3)
+// console.log(gunResult);
+
+//*3
+const unknownReturn = () => {
+    return 'unknown'
+}
+let unknownResult = unknownReturn()
+// console.log(unknownResult);
+
+//*4
+const moneyObjReturn = {
+    name: 'miraj',
+    pocketMoney: 300,
+    fiveX() {
+        const pokMny5x = () => {
+            let value = this.pocketMoney * 5
+
+            return value
+        }
+
+        return pokMny5x
+    }
+}
+let moneyObjResult = moneyObjReturn.fiveX()
+// console.log(moneyObjResult());
+
+//*5

@@ -139,3 +139,29 @@ let moneyObjResult = moneyObjReturn.fiveX()
 // console.log(moneyObjResult());
 
 //*5
+const numArr = [1, 2, 3, 4, 5, 6]
+const jogFolReturn = (arrJog) => {
+    let lastResult = arrJog.at(-1)
+    // console.log(lastResult);
+
+    let firstResult = arrJog[1]
+    // console.log(firstResult);
+
+    let sum = lastResult + firstResult
+    // console.log(sum);
+
+
+    return sum
+}
+let arrOutput = jogFolReturn(numArr)
+// console.log(arrOutput);
+
+//*6
+const towNumSum = (a = 10, b = 5) => {
+    let sum = a + b
+    // console.log(sum);
+
+    return sum
+}
+const sumResult = towNumSum(10, 50)
+// console.log(sumResult);

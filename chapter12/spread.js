@@ -65,3 +65,63 @@ const copyPerson = { ...person }
 //! add new property+value
 const copyPerson1 = { ...person, city: 'narayanganj' }
 // console.log(copyPerson1);
+
+
+//! practice
+//*1
+const techName = ['variable']
+const technology = [...techName, 'condition', 'array', 'loop']
+// console.log(techName);
+// console.log(technology);
+
+//*2
+const fruits = ['apple', 'banana', 'mango']
+const myFruits = [...fruits, 'orange', 'peyara']
+// console.log(fruits);
+// console.log(myFruits);
+
+//*3
+const frontend = ['js']
+const backend = ['node.js']
+const database = ['mongoDb']
+const fullstack = [...frontend, ...backend, ...database]
+// console.log(frontend);
+// console.log(backend);
+// console.log(database);
+// console.log(fullstack);
+
+//*4
+const mysite = {
+    name: 'mySite',
+    type: 'e-commerce',
+    status: 'active'
+}
+const add2site = { ...mysite, theme: 'dark' }
+// console.log(mysite);
+// console.log(add2site);
+
+//*5
+const self = {
+    name: 'arif',
+    age: 34,
+    country: 'b baria'
+}
+// console.log(self);
+
+const rmSelf = { ...self }
+delete rmSelf.country
+
+// console.log(rmSelf);
+
+//*6
+const car = {
+    make: 'toyota',
+    model: 'corolla',
+    year: 2020
+}
+// console.log(car);
+
+const updateCarYear = { ...car }
+updateCarYear.year = 2032
+
+// console.log(updateCarYear);

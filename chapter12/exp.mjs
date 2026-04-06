@@ -7,7 +7,7 @@ export function into(a, b) {
 }
 
 //! named export
-export const myName = 'miraj'
+export const name = 'miraj'
 export const age = 55
 
 //! default export

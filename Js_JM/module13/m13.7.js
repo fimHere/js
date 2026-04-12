@@ -10,3 +10,16 @@
         pascal case (MyName)
  */
 
+var var = 'variable'
+
+var var name = 'variable'
+
+var 'var name' = 'variable'
+
+var 4var = 'variable'
+
+var var5 = 'variable'
+
+var var_name = 'variable'
+var varName = 'variable'
+var VarName = 'variable'

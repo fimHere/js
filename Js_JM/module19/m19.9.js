@@ -32,7 +32,7 @@
 //             console.log('even',param);
 //             evenNumb.push(param)
 //         }
-//     }    
+//     }
 //     return evenNumb
 // }
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -60,3 +60,35 @@
 //     return sum
 // }
 // console.log(sumOfAllEvenNumbers(allEvenNumb));
+
+//! problem task
+// problem one
+function multiply(a, b, c, d) {
+  console.log("params log", a, b, c, d);
+
+  const result = a * b * c * d;
+  return result;
+}
+// const resultOutput = multiply(1, 2, 3, 4);
+// console.log(resultOutput);
+
+// problem two
+function oddMultiply(a) {
+  console.log("odd params log", a);
+
+  if (a % 2 !== 0) {
+    console.log("condition log", a);
+    return a * 2;
+  }
+}
+// console.log(oddMultiply(111));
+
+function evenDivide(a) {
+  console.log("even params log", a);
+
+  if (a % 2 === 0) {
+    console.log("condition log", a);
+    return a / 2;
+  }
+}
+// console.log(evenDivide(112));

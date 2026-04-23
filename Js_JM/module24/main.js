@@ -131,3 +131,53 @@ function listMaker(params) {
 }
 listMaker(liArray)
 // listMaker(student)
+
+
+//^ big practice for create element 'base/hard part'
+//* parent node/div
+const parentContainer = document.getElementById('parent_container')
+
+//* child node/create element
+const create_div = document.createElement('div')
+
+//^ create element
+const head1 = document.createElement('h1')
+head1.innerText = 'hello dom learners'
+
+const ulList = document.createElement('ul')
+
+const lists1 = document.createElement('li')
+lists1.innerText = 'andarkilla'
+ulList.appendChild(lists1)
+
+const lists2 = document.createElement('li')
+lists2.innerText = 'bandarban'
+ulList.appendChild(lists2)
+
+const lists3 = document.createElement('li')
+lists3.innerText = 'sundarban'
+ulList.appendChild(lists3)
+
+create_div.appendChild(head1)
+create_div.appendChild(ulList)
+
+//* append/add child node to parent container 
+parentContainer.appendChild(create_div)
+
+
+//^ big practice for create element 'easier part'
+const create_div1 = document.createElement('div')
+
+create_div1.innerHTML = `
+<h1>Book lists</h1>
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li>JS</li>
+    <li>react</li>
+    <li>mongoDb</li>
+    <li>nodeJs</li>
+</ul>
+`
+
+parentContainer.appendChild(create_div1)

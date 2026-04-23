@@ -31,11 +31,11 @@ itemsLoop(anchorItem)
 itemsLoop(navItem)
 
 //^ getElementById practice
-const greetHead = document.getElementById('domTitle')
-console.log(greetHead);
-//* change existing text
-greetHead.textContent = 'today we will learn DOM'
-greetHead.style.color = 'red'
+// const greetHead = document.getElementById('domTitle')
+// console.log(greetHead);
+// //* change existing text
+// greetHead.textContent = 'today we will learn DOM'
+// greetHead.style.color = 'red'
 
 
 //^ getElementsByClassName practice
@@ -63,3 +63,39 @@ for (const element of headList1) {
     console.log(element.innerText);
     element.style.color = 'white'
 }
+
+//^ classList
+const headList2 = document.querySelectorAll('li')
+console.log(headList.classList);
+
+// এলিমেন্টগুলোকে সিলেক্ট করা
+const greetHead = document.getElementById('domTitle');
+const btn = document.getElementById('colorBtn');
+
+// বাটনে ক্লিক করলে কী হবে তা সেট করা
+btn.addEventListener('click', function () {
+    // toggle মানে হলো: 'red-text' ক্লাসটি না থাকলে যোগ করবে, আর থাকলে মুছে দিবে
+    greetHead.classList.toggle('red-text');
+});
+
+//^ own practice
+const heading3Id = document.getElementById('h3Id')
+// console.log(heading3Id.innerText);
+const buttonId = document.getElementById('btnId')
+const buttonId1 = document.getElementById('btnId')
+// console.log(buttonId.innerText);
+// console.log(buttonId1.innerText);
+
+//* for color change or css change
+buttonId.addEventListener('click', function () {
+    heading3Id.classList.toggle('red-text')
+})
+
+//* for text change or html element change
+buttonId1.addEventListener('click', function () {
+    if (heading3Id.textContent === 'Hello' || heading3Id.textContent === 'hello') {
+        heading3Id.textContent = 'hi'
+    } else {
+        heading3Id.textContent = 'hello'
+    }
+})

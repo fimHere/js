@@ -99,3 +99,35 @@ buttonId1.addEventListener('click', function () {
         heading3Id.textContent = 'hello'
     }
 })
+
+
+//^ create element and append/add 
+const createElementInsideDiv = document.createElement('h1')
+console.log(createElementInsideDiv);
+createElementInsideDiv.innerText = 'create Heading'
+
+const addInsideDiv = document.getElementById('parentDiv')
+addInsideDiv.appendChild(createElementInsideDiv)
+
+// another use case
+const liArray = ['mango', 'banana', 'orange', 'apple', 'water melon']
+
+const student = [
+    { name: 'miraj', age: 34 },
+    { name: 'siraj', age: 24 },
+    { name: 'niraj', age: 14 },
+    { name: 'liraj', age: 64 },
+    { name: 'wira', age: 84 }
+]
+
+function listMaker(params) {
+    for (const element of params) {
+        const createElementInsideDiv1 = document.createElement('li')
+
+        createElementInsideDiv1.innerText = element
+
+        addInsideDiv.appendChild(createElementInsideDiv1)
+    }
+}
+listMaker(liArray)
+// listMaker(student)

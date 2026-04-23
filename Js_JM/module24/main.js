@@ -48,3 +48,18 @@ for (const element of listTitle) {
     element.style.fontSize = '48px'
     element.textContent = 'let go'
 }
+
+
+//^ querySelector practice
+const headList = document.querySelector('h1')
+console.log(headList.innerText);
+headList.style.textTransform = 'uppercase'
+
+
+//^ querySelectorAll practice
+const headList1 = document.querySelectorAll('li')
+// console.log(headList1);
+for (const element of headList1) {
+    console.log(element.innerText);
+    element.style.color = 'white'
+}

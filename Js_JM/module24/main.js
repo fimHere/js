@@ -111,6 +111,7 @@ addInsideDiv.appendChild(createElementInsideDiv)
 
 // another use case
 const liArray = ['mango', 'banana', 'orange', 'apple', 'water melon']
+const ages = [23, 4, 56, 7, 8, 89, 566, 34]
 
 const student = [
     { name: 'miraj', age: 34 },
@@ -130,6 +131,7 @@ function listMaker(params) {
     }
 }
 listMaker(liArray)
+listMaker(ages)
 // listMaker(student)
 
 

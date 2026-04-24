@@ -32,3 +32,12 @@ query all
 // notes
 childNodes: use korle whiteSpace/lineBrake/Enter ke text hisebe ashbe ja element+whiteSpace shoho nodeList count hobe
 children: use korle text asbena only element nodeList ashbe and count hobe
+
+
+DOM methods
+1. add()
+2. delete()
+3. create()
+4. remove()
+5. modify()
+etc

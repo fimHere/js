@@ -1,0 +1,14 @@
+//DOM event notes
+
+25.1 video
+kind of events (on diye start sokol key goloi event)
+1. click
+2. mouse over, down, move
+3. key down, press, up
+4. window resize, zoom in/out
+5. web page loading finished 
+6. form submitted
+7. video play, pause, end
+8. error 
+
+onclick

@@ -13,8 +13,11 @@ kind of events (on diye start sokol key goloi event)
 
 onclick
 
-25.2
+25.2 no video
 inline onclick event
 external onclick event
 get element by id then set onclick event
 
+25.3 no video
+//best practice of the events
+addEventListener

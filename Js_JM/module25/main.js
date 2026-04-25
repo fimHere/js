@@ -5,22 +5,22 @@ console.log('main js file connected');
 
 //^ 25.2 no video
 // first way
-// function bgColorChange() {
-//     document.body.style.backgroundColor = 'green'
-//     console.log('bg changed by click event');
-// }
-// function bgColorChange1() {
-//     document.body.style.backgroundColor = 'pink'
-//     console.log('bg changed by click event1');
-// }
-// function bgColorChange2() {
-//     document.body.style.backgroundColor = 'gray'
-//     console.log('bg changed by click event2');
-// }
-// function bgColorChange3() {
-//     document.body.style.backgroundColor = 'blue'
-//     console.log('bg changed by click event3');
-// }
+function bgColorChange() {
+    document.body.style.backgroundColor = 'green'
+    console.log('bg changed by click event');
+}
+function bgColorChange1() {
+    document.body.style.backgroundColor = 'pink'
+    console.log('bg changed by click event1');
+}
+function bgColorChange2() {
+    document.body.style.backgroundColor = 'gray'
+    console.log('bg changed by click event2');
+}
+function bgColorChange3() {
+    document.body.style.backgroundColor = 'blue'
+    console.log('bg changed by click event3');
+}
 
 // own practice
 const colors = ['yellow', 'green', 'blue', 'purple', 'grey'];
@@ -46,10 +46,10 @@ const make_color_red = document.getElementById('makeColorRed')
 // console.log(make_color_red);
 
 // another way
-// make_color_red.onclick = function () {
-//     document.body.style.backgroundColor = 'red'
-//     console.log('btn clicked');
-// }
+make_color_red.onclick = function () {
+    document.body.style.backgroundColor = 'red'
+    console.log('btn clicked');
+}
 
 // another way
 // make_color_red.onclick = function makeColorRedFunc() {
@@ -63,3 +63,16 @@ const make_color_red = document.getElementById('makeColorRed')
 //     document.body.style.backgroundColor = 'red'
 // }
 
+//^ 25.3 no video
+//* handle event by add event lister
+
+const addHandleEvent = document.getElementById('addEvent')
+// console.log(addHandleEvent);
+
+// structure of add event listener (element.addEventListener('event type',handlerFunction(){}))
+// addHandleEvent.addEventListener('click', function name(params) {
+//     document.body.style.backgroundColor = 'black'
+// })
+addHandleEvent.addEventListener('mousemove', function name(params) {
+    document.body.style.backgroundColor = 'black'
+})

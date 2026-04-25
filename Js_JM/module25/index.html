@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Event Learn</title>
+    <style>
+      .comment {
+        border: 2px solid slateblue;
+        background-color: skyblue;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 15px;
+      }
+    </style>
   </head>
   <body>
     <h1>hello event joiners</h1>
@@ -43,6 +52,39 @@
     <p id="inputPara">No name here. input name title</p>
     <input id="input_name" type="text" />
     <button id="btnInput">Update input</button>
+
+    <!-- comment box project  -->
+    <h1>My awesome comment box. write what in you mind!!!</h1>
+    <section>
+      <h3>All comment here.</h3>
+      <div id="postContainer">
+        <p class="comment">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem,
+          placeat!
+        </p>
+        <p class="comment">
+          Quibusdam nam distinctio nulla dolore doloremque repellat vitae saepe
+          officia!
+        </p>
+        <p class="comment">
+          Aliquam velit impedit quibusdam reiciendis, similique accusantium nisi
+          repellat corrupti!
+        </p>
+      </div>
+
+      <!-- form area for comment box -->
+      <!-- <form> -->
+      <textarea
+        name=""
+        id="postCommentTextArea"
+        cols="95"
+        rows="5"
+        placeholder="Write what in your mind for comment..."
+      ></textarea>
+      <br />
+      <button id="postCommentBtn">Post comment</button>
+      <!-- </form> -->
+    </section>
 
     <!-- script here -->
     <script>

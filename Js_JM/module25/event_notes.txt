@@ -28,3 +28,9 @@ addEventListener
 2. get inner text/html/content
 3. set inner text/html/content
 4. event handler by addEventListener
+
+25.5 no video
+//anatomy of the 'comment box project'
+1. set event handler for post comment btn
+2. get the comment to the text area(text area theke comment tule ana) by click post btn
+3. set/show the all comment area written the comment.

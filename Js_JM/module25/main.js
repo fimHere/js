@@ -113,4 +113,35 @@ btnInput.addEventListener("click", function () {
     //* set the name of input title
     const namePara = document.getElementById("inputPara");
     namePara.innerText = inputName;
-}); 
+});
+
+
+//^ 25.5 no video
+// comment box project
+document
+    .getElementById("postCommentBtn")
+    .addEventListener("click", function () {
+        console.log("post comment btn click");
+
+        // step-2:
+        const writtenComment = document.getElementById("postCommentTextArea");
+        // console.log(writtenComment);
+        const writtenCommentValue = writtenComment.value;
+        console.log(writtenCommentValue);
+
+        // step-3: get the parent nod where the publish comment
+        const postContainer = document.getElementById("postContainer");
+        console.log(postContainer);
+
+        // step-4: create a p tag fot set the inner text / text area comment
+        const createPara = document.createElement("p");
+        console.log(createPara);
+        createPara.innerText = writtenCommentValue;
+        createPara.classList.add("comment");
+
+        // step-5: add to post list
+        postContainer.appendChild(createPara);
+
+        // step-6: text area must be clean, when comment post to the comment list.
+        writtenComment.value = "";
+    });

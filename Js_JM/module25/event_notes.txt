@@ -12,3 +12,9 @@ kind of events (on diye start sokol key goloi event)
 8. error 
 
 onclick
+
+25.2
+inline onclick event
+external onclick event
+get element by id then set onclick event
+

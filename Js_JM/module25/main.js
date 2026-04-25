@@ -73,8 +73,14 @@ const addHandleEvent = document.getElementById('addEvent')
 // addHandleEvent.addEventListener('click', function name(params) {
 //     document.body.style.backgroundColor = 'black'
 // })
-addHandleEvent.addEventListener('mousemove', function name(params) {
+addHandleEvent.addEventListener('mouseover', function name(params) {
+    console.log('mouse over...');
+
     document.body.style.backgroundColor = 'black'
+})
+
+addHandleEvent.addEventListener('mouseout', function name(params) {
+    document.body.style.backgroundColor = 'white'
 })
 
 
@@ -145,3 +151,35 @@ document
         // step-6: text area must be clean, when comment post to the comment list.
         writtenComment.value = "";
     });
+
+
+//^ 25.6 no video
+// document.getElementById('keyInput').addEventListener('keydown', function (event) {
+//     console.log('key down', event.target.value);
+// })
+// document.getElementById('keyInput').addEventListener('keyup', function (event) {
+//     console.log('key up', event.target.value);
+// })
+// document.getElementById('keyInput').addEventListener('keypress', function (event) {
+//     console.log('key press', event.target.value);
+// })
+
+document.getElementById('keyInput').addEventListener('keyup', function (event) {
+    const eventValue = event.target.value
+    console.log('key press', eventValue);
+    const keyBtn = document.getElementById('keyDelete')
+    console.log(keyBtn);
+
+    if (eventValue === 'delete' || eventValue === 'Delete') {
+        console.log('if trigger');
+        keyBtn.removeAttribute('disabled')
+        document.getElementById('keyHead').style.color = 'red'
+        keyBtn.addEventListener('click', function () {
+            document.getElementById('keyHead').style.display = 'none'
+        })
+    } else {
+        console.log('else');
+        keyBtn.setAttribute('disabled', true)
+        document.getElementById('keyHead').style.color = ''
+    }
+})

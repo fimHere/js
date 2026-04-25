@@ -34,3 +34,14 @@ addEventListener
 1. set event handler for post comment btn
 2. get the comment to the text area(text area theke comment tule ana) by click post btn
 3. set/show the all comment area written the comment.
+
+25.6
+//key up down press
+1. keyup
+2. keydown
+3. keypress
+4. event
+5. event.target
+6. event.target.value
+7. get attribute
+8. set attribute

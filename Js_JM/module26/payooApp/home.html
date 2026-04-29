@@ -24,58 +24,130 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-[#f4f5f7] h-[100vh] space-y-5">
-    <div
-      class="p-2 rounded-md flex justify-between items-center max-w-lg mx-auto shadow-lg"
-    >
-      <div class="flex space-x-2">
-        <img src="./assets/Group.png" alt="" />
+  <body class="bg-[#f4f5f7] min-h-[100vh] space-y-4">
+    <!-- upper section -->
+    <div class="max-w-lg mx-auto space-y-3 bg-white rounded-b-lg">
+      <!-- navbar section -->
+      <div class="p-4 rounded-md flex justify-between items-center shadow-sm">
+        <div class="flex space-x-2 items-center">
+          <img src="./assets/Group.png" alt="" />
+          <div class="p-4">
+            <h2 class="font-bold">$<span>45000</span></h2>
+            <p class="capitalize text-[#08080880]">available balance</p>
+          </div>
+        </div>
+
         <div class="">
-          <h2 class="font-bold">$<span>45000</span></h2>
-          <p class="capitalize text-[#08080880]">available balance</p>
+          <button class="btn">
+            <i class="rotate-180 fa-solid fa-right-from-bracket"></i>
+            <span class="text-[#08080880]">Logout</span>
+          </button>
         </div>
       </div>
 
-      <div class="">
-        <button class="btn">
-          <i class="rotate-180 fa-solid fa-right-from-bracket"></i>
-          <span class="text-[#08080880]">Logout</span>
-        </button>
+      <!-- welcome section -->
+      <div class="p-4 space-y-2">
+        <h1 class="text-2xl capitalize font-bold">🔥welcome to payoo!</h1>
+        <p class="text-[#08080880]">
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and
+        </p>
+      </div>
+
+      <!-- service/card section -->
+      <div class="min-h-[200px] grid grid-cols-3 gap-4 p-4">
+        <div
+          class="p-3 cursor-pointer bg-[#dce6fa] rounded-2xl capitalize shadow-sm hover:scale-105 hover:font-semibold text-center"
+        >
+          <img class="mx-auto" src="./assets/wallet1.png" alt="" />
+          <h3>add money</h3>
+        </div>
+        <div
+          class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
+        >
+          <img class="mx-auto" src="./assets/send1.png" alt="" />
+          <h3>cash out</h3>
+        </div>
+        <div
+          class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
+        >
+          <img class="mx-auto" src="./assets/money1.png" alt="" />
+          <h3>transfer money</h3>
+        </div>
+        <div
+          class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
+        >
+          <img class="mx-auto" src="./assets/bonus1.png" alt="" />
+          <h3>get bonus</h3>
+        </div>
+        <div
+          class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
+        >
+          <img class="mx-auto" src="./assets/purse1.png" alt="" />
+          <h3>pay bill</h3>
+        </div>
+        <div
+          class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
+        >
+          <img class="mx-auto" src="./assets/transaction1.png" alt="" />
+          <h3>transactions</h3>
+        </div>
       </div>
     </div>
 
+    <!-- lower section -->
     <div class="max-w-lg mx-auto">
-      <h1 class="text-2xl capitalize font-bold">🔥welcome to payoo!</h1>
-      <p class="text-[#08080880]">
-        Enjoy easy and convenient financial services with us. Cashout charge is
-        low and
-      </p>
-    </div>
+      <!-- add money -->
+      <h class="capitalize font-bold text-lg p-4">add money</h>
+      <div class="bg-white rounded-2xl p8">
+        <form class="">
+          <div class="p-4">
+            <h2 class="capitalize font-medium text-lg">select bank</h2>
+            <select class="select bg-[#dce6fa] rounded-2xl w-full">
+              <option disabled selected>Select Bank</option>
+              <option>Islami Bank Bangladesh Limited.</option>
+              <option>Brac Bank</option>
+              <option>Pubali Bank</option>
+              <option>Agrani Bank</option>
+            </select>
+          </div>
+          <div class="p-4">
+            <h2 class="capitalize font-medium text-lg">bank account number</h2>
 
-    <div class="max-w-lg mx-auto border-2 min-h-[200px]">
-      <div class="p-3 border-2 text-center">
-        <img class="mx-auto" src="./assets/wallet1.png" alt="" />
-        <h3>add money</h3>
-      </div>
-      <div class="p-3 border-2 text-center">
-        <img class="mx-auto" src="./assets/send1.png" alt="" />
-        <h3>cash out</h3>
-      </div>
-      <div class="p-3 border-2 text-center">
-        <img class="mx-auto" src="./assets/money1.png" alt="" />
-        <h3>transfer money</h3>
-      </div>
-      <div class="p-3 border-2 text-center">
-        <img class="mx-auto" src="./assets/bonus1.png" alt="" />
-        <h3>get bonus</h3>
-      </div>
-      <div class="p-3 border-2 text-center">
-        <img class="mx-auto" src="./assets/purse1.png" alt="" />
-        <h3>pay bill</h3>
-      </div>
-      <div class="p-3 border-2 text-center">
-        <img class="mx-auto" src="./assets/transaction1.png" alt="" />
-        <h3>transactions</h3>
+            <input
+              type="text"
+              placeholder="Write your bank account number..."
+              class="input w-full bg-[#dce6fa] rounded-2xl"
+            />
+          </div>
+          <div class="p-4">
+            <h2 class="capitalize font-medium text-lg">amount to add</h2>
+
+            <input
+              type="text"
+              placeholder="Add to money..."
+              class="input w-full bg-[#dce6fa] rounded-2xl"
+            />
+          </div>
+          <div class="p-4">
+            <h2 class="capitalize font-medium text-lg">pin number</h2>
+
+            <input
+              type="text"
+              placeholder="Enter your pin"
+              class="input w-full bg-[#dce6fa] rounded-2xl"
+            />
+          </div>
+
+          <div class="p-4">
+            <button
+              id=""
+              class="btn text-lg text-white font-bold bg-blue-600 rounded-2xl w-full capitalize"
+            >
+              add money
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 

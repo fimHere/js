@@ -32,7 +32,7 @@
         <div class="flex space-x-2 items-center">
           <img src="./assets/Group.png" alt="" />
           <div class="p-4">
-            <h2 class="font-bold">$<span>45000</span></h2>
+            <h2 class="font-bold">$<span id="mainAmount">45000</span></h2>
             <p class="capitalize text-[#08080880]">available balance</p>
           </div>
         </div>
@@ -103,7 +103,10 @@
         <form class="">
           <div class="p-4">
             <h2 class="capitalize font-medium text-lg">select bank</h2>
-            <select class="select bg-[#dce6fa] rounded-2xl w-full">
+            <select
+              id="bankName"
+              class="select bg-[#dce6fa] rounded-2xl w-full"
+            >
               <option disabled selected>Select Bank</option>
               <option>Islami Bank Bangladesh Limited.</option>
               <option>Brac Bank</option>
@@ -115,8 +118,9 @@
             <h2 class="capitalize font-medium text-lg">bank account number</h2>
 
             <input
+              id="accountNumber"
               type="text"
-              placeholder="Write your bank account number..."
+              placeholder="Enter 11 digit account number..."
               class="input w-full bg-[#dce6fa] rounded-2xl"
             />
           </div>
@@ -124,6 +128,7 @@
             <h2 class="capitalize font-medium text-lg">amount to add</h2>
 
             <input
+              id="addAmount"
               type="text"
               placeholder="Add to money..."
               class="input w-full bg-[#dce6fa] rounded-2xl"
@@ -133,6 +138,7 @@
             <h2 class="capitalize font-medium text-lg">pin number</h2>
 
             <input
+              id="enterPin"
               type="text"
               placeholder="Enter your pin"
               class="input w-full bg-[#dce6fa] rounded-2xl"
@@ -141,7 +147,7 @@
 
           <div class="p-4">
             <button
-              id=""
+              id="addMoneyBtn"
               class="btn text-lg text-white font-bold bg-blue-600 rounded-2xl w-full capitalize"
             >
               add money
@@ -152,6 +158,6 @@
     </div>
 
     <!-- scripts here -->
-    <script src="./home.js"></script>
+    <script src="./home_addMoney.js"></script>
   </body>
 </html>

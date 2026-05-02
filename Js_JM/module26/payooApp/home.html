@@ -37,8 +37,8 @@
           </div>
         </div>
 
-        <div class="">
-          <button class="btn">
+        <div>
+          <button id="logoutBtn" class="btn">
             <i class="rotate-180 fa-solid fa-right-from-bracket"></i>
             <span class="text-[#08080880]">Logout</span>
           </button>
@@ -57,36 +57,42 @@
       <!-- service/card section -->
       <div class="min-h-[200px] grid grid-cols-3 gap-4 p-4">
         <div
-          class="p-3 cursor-pointer bg-[#dce6fa] rounded-2xl capitalize shadow-sm hover:scale-105 hover:font-semibold text-center"
+          id="moneyAdd"
+          class="p-3 cursor-pointer rounded-2xl capitalize shadow-sm hover:scale-105 hover:font-semibold text-center"
         >
           <img class="mx-auto" src="./assets/wallet1.png" alt="" />
           <h3>add money</h3>
         </div>
         <div
+          id="moneyCash"
           class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
         >
           <img class="mx-auto" src="./assets/send1.png" alt="" />
           <h3>cash out</h3>
         </div>
         <div
+          id="moneyTransfer"
           class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
         >
           <img class="mx-auto" src="./assets/money1.png" alt="" />
           <h3>transfer money</h3>
         </div>
         <div
+          id="moneyBonus"
           class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
         >
           <img class="mx-auto" src="./assets/bonus1.png" alt="" />
           <h3>get bonus</h3>
         </div>
         <div
+          id="moneyPay"
           class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
         >
           <img class="mx-auto" src="./assets/purse1.png" alt="" />
           <h3>pay bill</h3>
         </div>
         <div
+          id="moneyTransact"
           class="p-3 cursor-pointer rounded-lg capitalize border-gray-400 shadow-sm hover:scale-105 hover:font-semibold text-center"
         >
           <img class="mx-auto" src="./assets/transaction1.png" alt="" />
@@ -95,8 +101,8 @@
       </div>
     </div>
 
-    <!-- lower section -->
-    <div class="max-w-lg mx-auto">
+    <!-- add money section -->
+    <div id="add" class="max-w-lg mx-auto">
       <!-- add money -->
       <h class="capitalize font-bold text-lg p-4">add money</h>
       <div class="bg-white rounded-lg p8">
@@ -157,7 +163,56 @@
       </div>
     </div>
 
+    <!-- cash money section -->
+    <div id="cash" class="max-w-lg mx-auto hidden">
+      <!-- add money -->
+      <h class="capitalize font-bold text-lg p-4">CashOut money</h>
+      <div class="bg-white rounded-lg p8">
+        <form class="">
+          <div class="p-4">
+            <h2 class="capitalize font-medium text-lg">Agent number</h2>
+
+            <input
+              type="text"
+              placeholder="Enter 11 digit number..."
+              class="input w-full bg-[#dce6fa] rounded-2xl"
+            />
+          </div>
+          <div class="p-4">
+            <h2 class="capitalize font-medium text-lg">Amount</h2>
+
+            <input
+            id="withdrawAmount"
+              type="text"
+              placeholder="Add to money..."
+              class="input w-full bg-[#dce6fa] rounded-2xl"
+            />
+          </div>
+          <div class="p-4">
+            <h2 class="capitalize font-medium text-lg">pin number</h2>
+
+            <input
+              type="text"
+              placeholder="Enter your pin"
+              class="input w-full bg-[#dce6fa] rounded-2xl"
+            />
+          </div>
+
+          <div class="p-4">
+            <button
+              id="withdrawBtn"
+              class="btn text-lg text-white font-bold bg-blue-600 rounded-2xl w-full capitalize"
+            >
+              Withdraw Money
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- scripts here -->
     <script src="./home_addMoney.js"></script>
+    <script src="./home_cashout.js"></script>
+    <script src="toggle.js"></script>
   </body>
 </html>

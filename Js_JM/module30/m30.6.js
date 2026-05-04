@@ -1,4 +1,8 @@
 //^ topic of the class
+/**
+ * class
+ * object
+ */
 
 class Player {
   constructor(name, age) {

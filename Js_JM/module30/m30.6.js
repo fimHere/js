@@ -1,6 +1,8 @@
 //^ topic of the class
 /**
- * class
+ * class -- tamplate, instance
+ *      methods
+ * 
  * object
  */
 

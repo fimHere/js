@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>load Data</title>
+  </head>
+  <body>
+    <div class="">
+      <button onclick="loadBtn()">Load Data</button>
+      <br />
+      <button onclick="loadPosts()">Load Posts</button>
+    </div>
+
+    <!-- script here -->
+    <script>
+      // load data todos
+
+      // way1
+      //   const loadBtn = document.getElementById("loadBtn");
+      //   loadBtn.addEventListener("click", () => {
+      //     fetchData = fetch("https://jsonplaceholder.typicode.com/todos/1")
+      //       .then((response) => response.json())
+      //       .then((json) => console.log(json));
+      //   });
+      //   console.log(loadBtn);
+
+      // way2
+      // document.getElementById("loadBtn").addEventListener("click", () => {
+      //   fetchData = fetch("https://jsonplaceholder.typicode.com/todos/1")
+      //     .then((response) => response.json())
+      //     .then((data) => console.log(data));
+      // });
+
+      // way3
+      // const loadBtn = () => {
+      //   fetchData = fetch("https://jsonplaceholder.typicode.com/todos/1")
+      //     .then((response) => response.json())
+      //     .then((data) => console.log(data));
+      // };
+
+      // load data posts
+      const loadPosts = () => {
+        const fetchUrl = "https://jsonplaceholder.typicode.com/posts";
+
+        fetch(fetchUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            displayPost(data);
+          });
+      };
+
+      const displayPost = (posts) => {
+        console.log(posts);
+        posts.forEach((post) => {
+          console.log(post);
+        });
+      };
+    </script>
+  </body>
+</html>

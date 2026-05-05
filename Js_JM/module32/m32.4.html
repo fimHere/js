@@ -10,6 +10,8 @@
       <button onclick="loadBtn()">Load Data</button>
       <br />
       <button onclick="loadPosts()">Load Posts</button>
+
+      <ul id="postsContainer"></ul>
     </div>
 
     <!-- script here -->
@@ -46,16 +48,47 @@
         fetch(fetchUrl)
           .then((response) => response.json())
           .then((data) => {
-            console.log(data);
+            // console.log(data);
             displayPost(data);
           });
       };
 
       const displayPost = (posts) => {
-        console.log(posts);
+        // console.log(posts);
+
+        //1 get list container
+        const listContainer = document.getElementById("postsContainer");
+        console.log(listContainer);
+
+        // way1 loop
         posts.forEach((post) => {
-          console.log(post);
+          //2 create list items
+          const listItem = document.createElement("li");
+          listItem.innerText = post.id + post.title;
+
+          //3 add to list container
+          listContainer.appendChild(listItem);
+
+          // console.log(post);
         });
+
+        // way2 loop
+        // for (const post of posts) {
+        //   console.log(post);
+        // }
+
+        // way3 loop
+        // for (let i = 0; i < posts.length; i++) {
+        //   const element = posts[i];
+        //   console.log(element);
+        // }
+
+        // way4 loop
+        // let i = 0;
+        // while (i < posts.length) {
+        //   console.log(posts[i].);
+        //   i++;
+        // }
       };
     </script>
   </body>
